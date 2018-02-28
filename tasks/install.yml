@@ -1,0 +1,21 @@
+
+---
+
+  - name: Installing Java on RedHat
+    yum:
+      name: "java-1.8.0-openjdk"
+      state: present
+    when: ansible_os_family|lower == 'redhat'
+
+  - name: Installing Java on SuSE
+    zypper:
+      name: "java-1_8_0-openjdk"
+      state: present
+    when: ansible_os_family|lower == 'suse'
+
+  - name: Installing the Logstash RPM
+    package:
+      name: /var/tmp/{{ rpm_logstash }}
+      disable_gpg_check: yes
+      state: present
+

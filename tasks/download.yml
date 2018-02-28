@@ -1,0 +1,8 @@
+
+---
+
+  - name: Downloading Logstash RPM file
+    shell: wget -P /var/tmp -nc {{ repo_logstash }}/{{ rpm_logstash }}
+
+
+

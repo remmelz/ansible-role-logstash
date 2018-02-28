@@ -1,0 +1,7 @@
+
+
+- name: Deploying a logstash client
+  hosts: elastic
+
+  roles:
+    - ansible-role-logstash
