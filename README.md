@@ -1,2 +1,2 @@
 # ansible-role-logstash
-Ansible playbook for installing Elasticsearch 
+Ansible playbook for installing Logstash 
