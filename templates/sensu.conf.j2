@@ -1,8 +1,20 @@
 
-input { stdin { } }
+input {
+
+  udp {
+    port => 4040
+  }
+}
+
 
 output {
-  elasticsearch { hosts => ["{{elastic_host}}:9200"] }
+
+  elasticsearch {
+
+    hosts => ["{{elastic_host}}:9200"]
+    index => "sensu-%{+YYYY.MM.dd}"
+
+  }
 } 
 
 

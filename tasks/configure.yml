@@ -9,6 +9,7 @@
       group: logstash
       mode: 0640
     notify: Restart Logstash client
+    tags: configure
 
   - name: Starting the Logstash client
     systemd:

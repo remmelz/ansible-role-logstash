@@ -2,7 +2,7 @@
 ---
 
   network        : "192.168.1.0/24"
-  elastic_host   : "192.168.1.42"
+  elastic_host   : "192.168.1.44"
 
   rpm_logstash   : "logstash-6.2.2.rpm"
   repo_logstash  : "https://artifacts.elastic.co/downloads/logstash"
