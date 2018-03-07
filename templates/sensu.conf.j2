@@ -7,6 +7,19 @@ input {
 }
 
 
+filter {
+
+  json {
+    source => "message"
+    target => "metric"
+  }
+
+  mutate {
+    remove_field => [ "message" ]
+  }
+}
+
+
 output {
 
   elasticsearch {
