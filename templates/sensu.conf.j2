@@ -25,7 +25,7 @@ output {
   elasticsearch {
 
     hosts => ["{{elastic_host}}:9200"]
-    index => "sensu-%{+YYYY.MM.dd}"
+    index => "sensu_metrics-%{+YYYY.MM.dd}"
 
   }
 } 
